@@ -44,8 +44,11 @@ body{
 }
 
 .searchbar-img{
-    height: clamp(1rem, 2rem, 3rem);
+    height: clamp(0.4rem, 2rem, 3rem);
     color: black;
+}
+.img-big{
+    height: clamp(1rem, 4rem, 5rem);
 }
 .img-background{
     background-color: aqua;
@@ -54,6 +57,10 @@ body{
 }
 #searchbar{
     margin-top: 0.5rem;
+    margin-right: 15rem;
+}
+
+.avatar{
     margin-right: 15rem;
 }
 
