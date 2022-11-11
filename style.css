@@ -8,7 +8,6 @@ body{
 }
 
 .container{
-    width: 70vw;
     height: 100vh;
     border: solid 1px;
     margin: auto;
@@ -32,15 +31,12 @@ body{
 
 .header{
     border: solid 1px;
-
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .header-rows{
     border: solid 1px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .searchbar-img{
