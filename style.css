@@ -50,9 +50,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 #row1{
     padding-right: 3rem;
+    justify-content: flex-start;
+}
+#row3{
+    justify-content: flex-start;
+    padding-left: clamp(2rem,4rem, 6rem);
+}
+#row4{
+    justify-content: space-evenly;
 }
 
 
@@ -73,10 +82,11 @@ width: clamp(10rem,30rem, 40rem);
 }
 
 .img-background {
-    display: inline-block;
+    
     background-color: aqua;
     border-radius: 3rem;
     padding: 0.2rem;
+    margin-right: 1rem;
 }
 
 
