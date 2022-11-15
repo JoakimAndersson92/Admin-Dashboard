@@ -14,6 +14,16 @@ div {
     border: solid 1px;
 }
 
+ul{
+    margin: 0px;
+    margin-left: 4vw;
+    padding: 0px;
+}
+li{
+    font-size: calc(1vh + 1vw);
+    margin-top: 1vh;
+}
+
 .container {
     margin: auto;
     width: clamp(0px, 70vw, 100vw);
