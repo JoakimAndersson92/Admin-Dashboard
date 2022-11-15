@@ -1,125 +1,31 @@
 :root {
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
 
+div {
+    border: solid 1px;
+}
+
 .container {
-    width: 100vw;
-    height: 100vh;
-    border: solid 1px;
     margin: auto;
+    width: clamp(0px, 70vw, 100vw);
+    height: clamp(0px, 100vh, 100vh);
 
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 5fr;
-}
-
-/*-----------sidebar--------------*/
-.sidebar {
-    border: solid 1px;
-    grid-row: 1/3;
-
-    display: grid;
-}
-
-.sidebar-rows {
-    border: solid 1px;
-}
-
-/*-----------Sidebar(end)--------------*/
-
-/*-----------Header--------------*/
-
-.header {
-    border: solid 1px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.header-rows {
-    border: solid 1px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-#row1{
-    padding-right: 3rem;
-    justify-content: flex-start;
-}
-#row3{
-    justify-content: flex-start;
-    padding-left: clamp(2rem,4rem, 6rem);
-}
-#row4{
-    justify-content: space-evenly;
 }
 
-
-#searchbar {
+.wrapper{
 flex: 1 1 0%;
-    
-}
 
-.searchbar-img {
-    height: clamp(0.4rem, 2rem, 3rem);
-    margin-right: 1rem;
-    padding-left: 3rem;
-    color: black;
-}
-
-.img-big {
-    height: clamp(1rem, 4rem, 5rem);
-}
-
-.img-background {
-    
-    background-color: aqua;
-    border-radius: 3rem;
-    padding: 0.2rem;
-    margin-right: 1rem;
-}
-
-
-.avatar {
-    display: inline-block;
-}
-
-/*-----------Header(end)--------------*/
-
-/*-----------Content--------------*/
-.content {
-    border: solid 1px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: minmax(0px, 1fr) minmax(0px, 2fr);
+    grid-template-rows: minmax(0px, 1fr) minmax(0px, 2fr);
+    align-content: stretch;
+    justify-content: stretch;
 }
-
-.content div{
-    border: solid 1px;
-}
-
-#wrap1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#wrap1 div {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#wrap p {
-    border: solid 1px;
-}
-
-/*-----------Content(end)--------------*/
