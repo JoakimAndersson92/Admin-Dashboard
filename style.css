@@ -1,6 +1,8 @@
 :root {
     margin: 0;
     padding: 0;
+
+
 }
 
 body {
@@ -20,12 +22,40 @@ div {
     display: flex;
 }
 
-.wrapper{
-flex: 1 1 0%;
+.wrapper {
+    flex: 1 1 0%;
 
     display: grid;
     grid-template-columns: minmax(0px, 1fr) minmax(0px, 2fr);
-    grid-template-rows: minmax(0px, 1fr) minmax(0px, 2fr);
-    align-content: stretch;
-    justify-content: stretch;
+    grid-template-rows: minmax(0px, 1fr) minmax(0px, 3fr);
 }
+
+.wrapper-item1 {
+    grid-row: 1/3;
+    display: flex;
+}
+
+/*--------------sidebar---------------------------*/
+.sidebar {
+    flex: 1 1 0%;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 3fr);
+}
+#sidebar-header-and-image{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar h3{
+    display: inline-block;
+    font-size: 3vw;
+    margin: 0;
+}
+.sidebar img {
+    display: inline-block;
+    width: 5vw;
+    height: 7vh;
+}
+
+/*--------------sidebar(end)---------------------------*/
