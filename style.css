@@ -91,7 +91,7 @@ li {
     height: 7vh;
 }
 
-#search-and-image {
+.header-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +103,7 @@ li {
     height: 2.5vh;
 }
 
-#search-and-image span {
+.avatar-background {
     display: flex;
     align-items: center;
     background-color: aqua;
@@ -126,12 +126,34 @@ li {
 #search-and-image h3{
     margin-left: 0.5vw;
 }
+#name-and-buttons{
+    justify-content: space-between;
+}
+
+#name-and-buttons>div{
+    display: inline;
+    margin-right: 10vw;
+
+    font-size: 1vw;
+}
+
+#name-and-buttons>button{
+    width: 4vw;
+    height: 3vh;
+    font-size: 1vw;
+
+}
 
 @media only screen and (max-width: 600px) {
-    #search-and-image span {
+    .avatar-background {
         height: 2.5vh;
         padding-top: 0.5vh;
     }
+}
+
+#name-and-buttons>button{
+    padding-right: 1vw;
+
 }
 
 
