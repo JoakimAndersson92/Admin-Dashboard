@@ -14,12 +14,13 @@ div {
     border: solid 1px;
 }
 
-ul{
+ul {
     margin: 0px;
     margin-left: 4vw;
     padding: 0px;
 }
-li{
+
+li {
     font-size: calc(1vh + 1vw);
     margin-top: 1vh;
 }
@@ -45,23 +46,30 @@ li{
     display: flex;
 }
 
+.wrapper-item2 {
+    grid-row: 1/2;
+    display: flex;
+}
+
 /*--------------sidebar---------------------------*/
 .sidebar {
     flex: 1 1 0%;
     display: grid;
     grid-template-rows: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 3fr);
 }
-#sidebar-header-and-image{
+
+#sidebar-header-and-image {
     margin-top: 3vh;
     display: flex;
     align-items: center;
 }
 
-.sidebar h3{
+.sidebar h3 {
     display: inline-block;
     font-size: 3vw;
     margin: 0;
 }
+
 .sidebar img {
     display: inline-block;
     width: 5vw;
@@ -69,3 +77,63 @@ li{
 }
 
 /*--------------sidebar(end)---------------------------*/
+/*--------------header---------------------------*/
+
+.header {
+    flex: 1 1 0%;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+
+.header img {
+    width: 5vw;
+    height: 7vh;
+}
+
+#search-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(1vh + 1vw);
+}
+
+#search-and-image>input {
+    width: 20vw;
+    height: 2.5vh;
+}
+
+#search-and-image span {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 3rem;
+    width: 5vw;
+    height: 8vh;
+    padding-bottom: 0.8vh;
+}
+
+#search-and-image>div {
+    width: 15vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+
+    box-sizing:border-box;
+    font-size: 1vw;
+}
+
+#search-and-image h3{
+    margin-left: 0.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    #search-and-image span {
+        height: 2.5vh;
+        padding-top: 0.5vh;
+    }
+}
+
+
+
+    /*--------------header(end)---------------------------*/
