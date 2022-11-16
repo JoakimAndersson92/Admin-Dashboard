@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 
+    --general-pading: calc(1vh + 1vw);
 
 }
 
@@ -50,6 +51,10 @@ li {
     grid-row: 1/2;
     display: flex;
 }
+.wrapper-item3 {
+    grid-row: 2/3;
+    display: flex;
+}
 
 /*--------------sidebar---------------------------*/
 .sidebar {
@@ -95,7 +100,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: calc(1vh + 1vw);
+    padding: var(--general-pading);
 }
 
 #search-and-image>input {
@@ -144,18 +149,50 @@ li {
 
 }
 
-@media only screen and (max-width: 600px) {
-    .avatar-background {
-        height: 2.5vh;
-        padding-top: 0.5vh;
-    }
-}
-
-#name-and-buttons>button{
-    padding-right: 1vw;
-
-}
-
 
 
     /*--------------header(end)---------------------------*/
+    /*--------------content---------------------------*/
+.content{
+    flex: 1 1 0%;
+    display: grid;
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr) ;
+
+}
+
+#your-project{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: calc(1vh + 1vw);
+    padding: var(--general-pading);
+    
+}
+
+#your-project>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8vw;
+    padding: var(--general-pading);
+
+}
+
+
+    /*--------------content(end)---------------------------*/
+
+
+    @media only screen and (max-width: 600px) {
+        .avatar-background {
+            height: 2.5vh;
+            padding-top: 0.5vh;
+        }
+    
+        #name-and-buttons>button{
+            padding-right: 4vw;
+        
+        }
+
+        #your-project>div p,h3{
+            font-size: 0.8vh;
+        }
+    }
