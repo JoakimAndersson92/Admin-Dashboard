@@ -51,6 +51,7 @@ li {
     grid-row: 1/2;
     display: flex;
 }
+
 .wrapper-item3 {
     grid-row: 2/3;
     display: flex;
@@ -88,6 +89,7 @@ li {
     flex: 1 1 0%;
     display: grid;
     grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    grid-auto-columns: 46vw;
 }
 
 
@@ -124,25 +126,26 @@ li {
     display: flex;
     align-items: center;
 
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-size: 1vw;
 }
 
-#search-and-image h3{
+#search-and-image h3 {
     margin-left: 0.5vw;
 }
-#name-and-buttons{
+
+#name-and-buttons {
     justify-content: space-between;
 }
 
-#name-and-buttons>div{
+#name-and-buttons>div {
     display: inline;
     margin-right: 10vw;
 
     font-size: 1vw;
 }
 
-#name-and-buttons>button{
+#name-and-buttons>button {
     width: 4vw;
     height: 3vh;
     font-size: 1vw;
@@ -151,48 +154,71 @@ li {
 
 
 
-    /*--------------header(end)---------------------------*/
-    /*--------------content---------------------------*/
+/*--------------header(end)---------------------------*/
+/*--------------content---------------------------*/
 .content{
     flex: 1 1 0%;
     display: grid;
-    grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr) ;
-
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr);
 }
 
 #your-project{
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) repeat(3, minmax(0, 3fr));
+    align-items: stretch;
     gap: calc(1vh + 1vw);
     padding: var(--general-pading);
-    
 }
 
 #your-project>div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.8vw;
-    padding: var(--general-pading);
+    font-size: calc(0.4vh + 0.4vw);
+}
 
+#your-project>:nth-child(1){
+    grid-column: 1/3;
+    display: flex;
+    align-items: flex-end;
+}
+
+#trending-announcement{
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 3.5fr) minmax(0, 1fr) minmax(0, 3.5fr);
+    gap: calc(1vh + 1vw);
+    padding: var(--general-pading);
+}
+
+#trending-announcement>div{
+    font-size: calc(0.4vh + 0.4vw);
+}
+
+#trending-announcement>:nth-child(odd){
+    display: flex;
+    align-items: flex-end;
 }
 
 
-    /*--------------content(end)---------------------------*/
 
 
-    @media only screen and (max-width: 600px) {
-        .avatar-background {
-            height: 2.5vh;
-            padding-top: 0.5vh;
-        }
-    
-        #name-and-buttons>button{
-            padding-right: 4vw;
-        
-        }
 
-        #your-project>div p,h3{
-            font-size: 0.8vh;
-        }
+
+/*--------------content(end)---------------------------*/
+
+
+@media only screen and (max-width: 600px) {
+    .avatar-background {
+        height: 2.5vh;
+        padding-top: 0.5vh;
     }
+
+    #name-and-buttons>button {
+        padding-right: 4vw;
+
+    }
+
+    #your-project>div p,
+    h3 {
+        font-size: 0.8vh;
+    }
+
+}
