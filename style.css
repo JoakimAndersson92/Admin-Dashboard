@@ -288,7 +288,28 @@ h2 {
     
 }
 #trending-announcement>div{
+    display: grid;
     padding-left: 1vw;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+    /* align-content: end; */
+}
+
+#trending img{
+    width: 5vw;
+    height: 5vh;
+}
+
+
+.trending-list-card{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.trending-list-card>div{
+    width: 3vw;
+    height: 5vh;
 }
 
 #trending-announcement>:nth-child(odd) {
@@ -314,6 +335,13 @@ h2 {
 
 
 @media only screen and (max-width: 600px) {
+
+    body{
+        display: flex;
+    }
+    .container{
+        flex: 1 1 0%;
+    }
     .avatar-background {
         height: 2.5vh;
         width: 5vw;
