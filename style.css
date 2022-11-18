@@ -28,6 +28,10 @@ li {
     margin-top: 1vh;
 }
 
+h2{
+    margin: 0px;
+}
+
 .container {
     margin: auto;
     width: clamp(0px, 70vw, 100vw);
@@ -181,6 +185,8 @@ li {
     flex: 1 1 0%;
     display: grid;
     grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr);
+
+    background-color: rgba(201, 201, 201, 0.219);
 }
 
 #your-project{
@@ -194,12 +200,17 @@ li {
 
 #your-project>div{
     font-size: calc(0.4vh + 0.4vw);
+
+    background-color: white;
 }
 
 #your-project>:nth-child(1){
     grid-column: 1/3;
     display: flex;
     align-items: flex-end;
+
+    background-color: rgba(201, 201, 201, 0.219);
+    font-size: calc(0.7vh + 0.7vw);
 }
 
 #trending-announcement{
@@ -209,13 +220,12 @@ li {
     padding: var(--general-pading);
 }
 
-#trending-announcement>div{
-    font-size: calc(0.4vh + 0.4vw);
-}
-
 #trending-announcement>:nth-child(odd){
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end;   
+}
+#trending-announcement>:nth-child(even){
+    background-color: white;  
 }
 
 
